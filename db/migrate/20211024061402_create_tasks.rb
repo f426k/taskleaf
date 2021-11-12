@@ -3,9 +3,6 @@ class CreateTasks < ActiveRecord::Migration[6.1]
     create_table :tasks do |t|
       t.string :name, limit: 30, null: false
       t.text :description
-
-      t.timestamps
-      t.index :name, unipue: true
     end
   end
 end
